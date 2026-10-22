@@ -69,6 +69,31 @@ After starting the application, open Swagger UI:
 
 `http://localhost:8080/swagger-ui/index.html`
 
+
+
+## Security
+
+- JWT-based authentication
+- Role-based authorization for restricted endpoints
+- Student profile access checks
+
+## Testing
+
+Run the test suite using Maven Wrapper:
+
+**Windows:**
+```powershell
+.\mvnw.cmd test
+```
+
+**macOS/Linux:**
+```bash
+./mvnw test
+```
+
+Configure the required environment variables (`DB_USERNAME`, `DB_PASSWORD`, and `JWT_SECRET`) before running tests.
+
+
 ## Configuration
 
 Database credentials and the JWT signing secret are provided through environment variables. Do not commit real credentials or secrets to the repository.
